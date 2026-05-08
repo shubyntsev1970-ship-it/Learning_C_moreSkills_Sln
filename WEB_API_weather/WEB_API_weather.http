@@ -1,0 +1,9 @@
+@WEB_API_weather_HostAddress = http://localhost:5030
+
+GET {{WEB_API_weather_HostAddress}}/weatherforecast/
+Accept: application/json  
+
+### Это файл для тестирования API прямо из Visual Studio.
+### Создается переменная WEB_API_weather_HostAddress с адресом сервера.
+### GET {{WEB_API_weather_HostAddress}}/weatherforecast/ - это запрос 
+### Accept: application/json - Клиент хочет получить ответ в JSON.

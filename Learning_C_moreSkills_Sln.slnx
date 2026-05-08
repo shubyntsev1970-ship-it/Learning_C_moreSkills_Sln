@@ -1,5 +1,6 @@
 <Solution>
-  <Project Path="Learning_C_WinForms_Predictor/Learning_C_WinForms_Predictor.csproj" Id="f1ea0f7e-c8b9-45a4-9e9c-4abcdf9f05e8" />
   <Project Path="Lessons/Lessons.csproj" Id="881d7b29-6980-4464-8aab-2d7296b9ee78" />
   <Project Path="MyLibrary/MyLibrary.csproj" Id="7f9cb975-93b4-4eb1-8bf9-9f6dcc8bf00f" />
+  <Project Path="WEB_API_weather/WEB_API_weather.csproj" Id="6cae4e9e-dbda-47ec-8476-359355120c95" />
+  <Project Path="WinForms_Predictor/WinForms_Predictor.csproj" Id="f1ea0f7e-c8b9-45a4-9e9c-4abcdf9f05e8" />
 </Solution>

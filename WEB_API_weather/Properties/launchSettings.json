@@ -1,0 +1,22 @@
+{
+  "_comment": "Этот файл говорит Visual Studio / dotnet run, как запускать проект",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5030"
+    },
+    "https": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7108;http://localhost:5030"
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}

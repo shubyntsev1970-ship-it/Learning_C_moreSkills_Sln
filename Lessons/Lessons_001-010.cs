@@ -1,5 +1,6 @@
 ﻿
 using MyLibrary;
+using System.Diagnostics;
 
 namespace Lessons
 {
@@ -234,6 +235,38 @@ namespace Lessons
             // или
             result = new MyMathOp().Mod2(firstValue, secondValue);
             Console.WriteLine($"new MyMathOp().Mod2(firstValue, secondValue) = {result}");
+
+            Console.WriteLine(new string('-', 120));
+        }
+
+        // КАК ИЗМЕРИТЬ ВРЕМЯ ВЫПОЛНЕНИЯ ПРОГРАММЫ, КОДА, МЕТОДА, ФУНКЦИИ, ЗАПРОСА. STOPWATCH
+        public static void Lesson_003()
+        {
+            Console.WriteLine("Hello from Lesson_003 !!!\nКАК ИЗМЕРИТЬ ВРЕМЯ ВЫПОЛНЕНИЯ ПРОГРАММЫ, КОДА, МЕТОДА, ФУНКЦИИ, ЗАПРОСА. STOPWATCH");
+            Console.WriteLine();
+
+            // Для измерения времени выполнения кода в C# можно использовать класс Stopwatch из пространства имен System.Diagnostics.
+            // Вот пример использования Stopwatch для измерения времени выполнения метода:
+            var stopwatch = new Stopwatch();
+            stopwatch.Start(); // Начало измерения времени
+            // Здесь размещаем код, время выполнения которого нужно измерить
+            Thread.Sleep(123);
+            stopwatch.Stop(); // Остановка измерения времени
+            Console.WriteLine($"Время выполнения кода: {stopwatch.ElapsedMilliseconds} миллисекунд");
+
+            Console.WriteLine();
+
+            stopwatch.Restart();
+            // Здесь размещаем код, время выполнения которого нужно измерить
+            for (int i = 0; i < 1000000; i++)
+            {
+                var temp = Math.Sqrt(i);
+            }
+            
+            stopwatch.Stop();
+
+            Console.WriteLine($"Время выполнения кода: {stopwatch.Elapsed} миллисекунд");
+            Console.WriteLine($"Время выполнения кода: {stopwatch.Elapsed.TotalMilliseconds} миллисекунд");
 
             Console.WriteLine(new string('-', 120));
         }
