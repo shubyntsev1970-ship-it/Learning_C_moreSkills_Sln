@@ -11,8 +11,6 @@
     dependency injection.
 */
 
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

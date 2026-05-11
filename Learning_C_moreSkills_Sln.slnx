@@ -3,4 +3,6 @@
   <Project Path="MyLibrary/MyLibrary.csproj" Id="7f9cb975-93b4-4eb1-8bf9-9f6dcc8bf00f" />
   <Project Path="WEB_API_weather/WEB_API_weather.csproj" Id="6cae4e9e-dbda-47ec-8476-359355120c95" />
   <Project Path="WinForms_Predictor/WinForms_Predictor.csproj" Id="f1ea0f7e-c8b9-45a4-9e9c-4abcdf9f05e8" />
+  <Project Path="Win_Forms_ImageProccesing/Win_Forms_ImageProccesing.csproj" Id="e6cd2aed-26fb-427c-8857-ce6793c1cdd5" />
+  <Project Path="WPF_TodoApp/WPF_TodoApp.csproj" Id="065fc829-8093-45ac-b1dd-f11a9bb2bfb6" />
 </Solution>
