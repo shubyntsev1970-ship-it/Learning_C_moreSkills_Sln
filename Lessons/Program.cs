@@ -6,7 +6,6 @@ namespace Lessons
     {
         static void Main()
         {
-            
             Console.OutputEncoding = Encoding.UTF8; // Изменяем кодировку консоли
 
             // Смотри проект WinForms_Predictor:
@@ -21,6 +20,13 @@ namespace Lessons
 
             // Смотри проект Win_Forms_ImageProccesing:
             // ОБРАБОТКА ИЗОБРАЖЕНИЙ. РАБОТА С КАРТИНКАМИ
+
+            // Смотри проект WinForms_GameOfLife:
+            // СИМУЛЯЦИЯ ЖИЗНИ НА C#
+
+            // Смотри проект WinForms_Stars:
+            // STARFIELD SIMULATION. Скринсейвер из Windows 98 на C#.
+
 
             Lesson_001(); // Ловушки с инкрементом/декрементом и коротким замыканием в C#
             Lesson_002(); // СОЗДАНИЕ DLL C#. КАК ПОДКЛЮЧИТЬ DLL. Метод расширения

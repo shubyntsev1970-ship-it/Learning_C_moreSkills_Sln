@@ -2,7 +2,9 @@
   <Project Path="Lessons/Lessons.csproj" Id="881d7b29-6980-4464-8aab-2d7296b9ee78" />
   <Project Path="MyLibrary/MyLibrary.csproj" Id="7f9cb975-93b4-4eb1-8bf9-9f6dcc8bf00f" />
   <Project Path="WEB_API_weather/WEB_API_weather.csproj" Id="6cae4e9e-dbda-47ec-8476-359355120c95" />
+  <Project Path="WinForms_GameOfLife/WinForms_GameOfLife.csproj" Id="d5125d72-ef00-4276-95d4-f74e36df077e" />
   <Project Path="WinForms_Predictor/WinForms_Predictor.csproj" Id="f1ea0f7e-c8b9-45a4-9e9c-4abcdf9f05e8" />
+  <Project Path="WinForms_Stars/WinForms_Stars.csproj" Id="5839a509-b44b-47ec-8b92-547966f0a65a" />
   <Project Path="Win_Forms_ImageProccesing/Win_Forms_ImageProccesing.csproj" Id="e6cd2aed-26fb-427c-8857-ce6793c1cdd5" />
   <Project Path="WPF_TodoApp/WPF_TodoApp.csproj" Id="065fc829-8093-45ac-b1dd-f11a9bb2bfb6" />
 </Solution>
