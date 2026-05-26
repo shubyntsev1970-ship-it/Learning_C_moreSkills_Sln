@@ -1,5 +1,7 @@
 <Solution>
+  <Project Path="Console_ASCII_art/Console_ASCII_art.csproj" Id="de668917-ca26-49e2-a0b6-bbf87cf4d4b1" />
   <Project Path="Console_GameOfLife/Console_GameOfLife.csproj" Id="7e1354c6-2880-4854-bc32-465bf2786793" />
+  <Project Path="Console_Producer/Console_Producer.csproj" Id="d0e8dc2b-0f76-4087-a91c-4c28b05e4b69" />
   <Project Path="Lessons/Lessons.csproj" Id="881d7b29-6980-4464-8aab-2d7296b9ee78" />
   <Project Path="MyLibrary/MyLibrary.csproj" Id="7f9cb975-93b4-4eb1-8bf9-9f6dcc8bf00f" />
   <Project Path="WEB_API_weather/WEB_API_weather.csproj" Id="6cae4e9e-dbda-47ec-8476-359355120c95" />
