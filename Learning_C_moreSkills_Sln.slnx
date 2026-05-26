@@ -1,7 +1,9 @@
 <Solution>
+  <Project Path="Console_GameOfLife/Console_GameOfLife.csproj" Id="7e1354c6-2880-4854-bc32-465bf2786793" />
   <Project Path="Lessons/Lessons.csproj" Id="881d7b29-6980-4464-8aab-2d7296b9ee78" />
   <Project Path="MyLibrary/MyLibrary.csproj" Id="7f9cb975-93b4-4eb1-8bf9-9f6dcc8bf00f" />
   <Project Path="WEB_API_weather/WEB_API_weather.csproj" Id="6cae4e9e-dbda-47ec-8476-359355120c95" />
+  <Project Path="WinForms_Consumer/WinForms_Consumer.csproj" Id="b2e1a7e5-1e07-458c-8338-f0bff7cdef8a" />
   <Project Path="WinForms_GameOfLife/WinForms_GameOfLife.csproj" Id="d5125d72-ef00-4276-95d4-f74e36df077e" />
   <Project Path="WinForms_Predictor/WinForms_Predictor.csproj" Id="f1ea0f7e-c8b9-45a4-9e9c-4abcdf9f05e8" />
   <Project Path="WinForms_Stars/WinForms_Stars.csproj" Id="5839a509-b44b-47ec-8b92-547966f0a65a" />

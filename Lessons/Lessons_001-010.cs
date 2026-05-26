@@ -226,7 +226,7 @@ namespace Lessons
 
             // Только так
             MyMathOp myMathOp = new MyMathOp();
-            
+
             result = MyExtensions.Mod2(myMathOp, firstValue, secondValue);
             Console.WriteLine($"MyExtensions.Mod2(myMathOp, firstValue, secondValue) = {result}");
             // или
@@ -262,13 +262,85 @@ namespace Lessons
             {
                 var temp = Math.Sqrt(i);
             }
-            
+
             stopwatch.Stop();
 
             Console.WriteLine($"Время выполнения кода: {stopwatch.Elapsed} миллисекунд");
             Console.WriteLine($"Время выполнения кода: {stopwatch.Elapsed.TotalMilliseconds} миллисекунд");
 
             Console.WriteLine(new string('-', 120));
+        }
+
+        // На что способен один искусственный нейрон. Искусственный нейрон на C# с нуля
+        public static void Lesson_004()
+        {
+            Console.WriteLine("Hello from Lesson_004 !!!\nНа что способен один искусственный нейрон. Искусственный нейрон на C# с нуля");
+            Console.WriteLine();
+            // Искусственный нейрон - это базовый элемент искусственной нейронной сети, который имитирует работу биологического нейрона.
+            // Он принимает несколько входных сигналов, обрабатывает их и выдает выходной сигнал на основе определенной функции активации.
+            // На что способен один искусственный нейрон?
+            // 1. Логические операции: Один искусственный нейрон может выполнять логические операции, такие как AND, OR, NOT.
+            // 2. Линейные функции: Он может моделировать линейные функции и принимать решения на основе линейной комбинации входных данных.
+            // 3. Классификация: Искусственный нейрон может использоваться для классификации данных, например, для распознавания образов
+            // или текста.
+            // 4. Регрессия: Он может использоваться для предсказания числовых значений на основе входных данных.
+
+            decimal km = 100;
+            decimal miles = 62.1371m;
+
+            Neuron neuron = new Neuron();
+
+            Console.WriteLine("До обучения нейрона");
+            Console.WriteLine($"{neuron.ProcessInputData(km)} миль в {km} км");
+            Console.WriteLine("Нажмите любую кнопку для начала обучения нейрона");
+            Console.ReadLine();
+
+            int i = 0;
+
+            do
+            {
+                i++;
+
+                neuron.Train(km, miles);
+                if ( i % 10000 == 0)
+                    Console.WriteLine($"Итерация: {i}\tОшибка:\t{neuron.LastError}");
+
+            }
+            while (neuron.LastError > neuron.Smoothing || neuron.LastError < -neuron.Smoothing);
+
+            Console.WriteLine("После обучения нейрона");
+            
+            Console.WriteLine($"{neuron.ProcessInputData(km)} миль в {km} км");
+
+            Console.WriteLine($"{neuron.ProcessInputData(541)} миль в {541} км");
+
+            Console.WriteLine($"{neuron.RestoreInputData(10)} км в {10} миль");
+
+            Console.WriteLine(new string('-', 120));
+        }
+    }
+
+    public class Neuron
+    {
+        private decimal weight = 0.5m;
+        public decimal LastError { get; private set; }
+        public decimal Smoothing { get; set; } = 0.00001m;
+        public decimal ProcessInputData(decimal input)
+        {
+            return input * weight;
+        }
+
+        public decimal RestoreInputData(decimal output)
+        {
+            return output / weight;
+        }
+
+        public void Train(decimal input, decimal expectedResult)
+        {
+            var actualResult = input * weight;
+            LastError = expectedResult - actualResult;
+            var correction = (LastError / actualResult) * Smoothing;
+            weight += correction;
         }
     }
 
