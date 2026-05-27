@@ -14,6 +14,9 @@ namespace Lessons
             // Смотри проект Console_GameOfLife:
             // СИМУЛЯЦИЯ ЖИЗНИ НА C#. Game Of Life в консоли
 
+            // Смотри проект Console_Parser и Console_Benchmark:
+            // Benchmarkdotnet. Как измерить производительность кода
+
             // Смотри проект WEB_API_weather
 
             // Смотри проект Win_Forms_ImageProccesing:
